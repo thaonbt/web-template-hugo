@@ -5,8 +5,8 @@ title = "ThaoNguyen"
   [[module.imports]]
     path = "github.com/luizdepra/hugo-coder"
 
-languageCode = "en"
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false   # false: URL en không có prefix (/about/), true: có (/en/about/)
 enableEmoji = true
 
 [pagination]
@@ -23,33 +23,45 @@ enableEmoji = true
     [markup.goldmark.renderer]
       unsafe = true
 
+# Giá trị mặc định — dùng chung cho mọi ngôn ngữ trừ khi override trong [languages.xx.params]
 [params]
   author = "ThaoNguyen"
-  description = "ThaoNguyen's personal site"
+  avatarURL = "images/avatar.png"       # thay bằng ảnh thật trong static/images/
+  #gravatar = "john.doe@example.com"
   keywords = "blog,developer,tech"
-  info = ["Software Engineer"]
-  avatarURL = "images/avatar.jpg"       # thay bằng ảnh thật trong static/images/
   dateFormat = "January 2, 2006"
   since = 2026
 
-  # Hiện commit hash trong footer, trỏ về repo template này
-  commit = "https://github.com/thaonbt/web-template-hugo/tree/"
+# Hiện commit hash trong footer, trỏ về repo template này
+commit = "https://github.com/thaonbt/web-template-hugo/tree/"
 
-  rtl = false
-  colorScheme = "auto"
-  hideColorSchemeToggle = false
-  maxSeeAlsoItems = 5
+# Right To Left, shift content direction for languages such as Arabic
+rtl = false
 
-  customCSS = []
-  customSCSS = []
-  customJS = []
-  customRemoteJS = []
+# Specify light/dark colorscheme
+# Supported values:
+# "auto" (use preference set by browser)
+# "dark" (dark background, light foreground)
+# "light" (light background, dark foreground) (default)
+colorScheme = "auto"
 
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+# Hide the toggle button, along with the associated vertical divider
+hideColorSchemeToggle = false
+
+# Series see also post count
+maxSeeAlsoItems = 5
+
+# Custom CSS
+customCSS = []
+
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+customSCSS = ["scss/custom.scss"]
+
+# Custom JS
+customJS = []
+
+# Custom remote JS files
+customRemoteJS = []
 
 [[params.social]]
   name = "Github"
@@ -65,17 +77,54 @@ enableEmoji = true
   rel = "alternate"
   type = "application/rss+xml"
 
-[[languages.en.menu.main]]
-  name = "About"
-  weight = 1
-  url = "about/"
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
 
-[[languages.en.menu.main]]
-  name = "Blog"
-  weight = 2
-  url = "posts/"
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+      info = ["AI-Augmented Engineer", "QA Automation Engineer"]
+      description = "ThaoNguyen's personal site"
 
-[[languages.en.menu.main]]
-  name = "Projects"
-  weight = 3
-  url = "projects/"
+    [[languages.en.menu.main]]
+      name = "About"
+      weight = 1
+      url = "about/"
+
+    [[languages.en.menu.main]]
+      name = "Blog"
+      weight = 2
+      url = "posts/"
+
+    [[languages.en.menu.main]]
+      name = "Projects"
+      weight = 3
+      url = "projects/"
+
+  [languages.vi]
+    languageName = "Tiếng Việt"
+    title = "ThaoNguyen"
+    weight = 2
+    [languages.vi.params]
+      info = ["Kỹ sư phần mềm úng dụng AI", "Kỹ sư tự động hoá"]
+      description = "Trang cá nhân của ThaoNguyen"
+
+    [[languages.vi.menu.main]]
+      name = "Giới thiệu"
+      weight = 1
+      url = "about/"
+
+    [[languages.vi.menu.main]]
+      name = "Blog"
+      weight = 2
+      url = "posts/"
+
+    [[languages.vi.menu.main]]
+      name = "Dự án"
+      weight = 3
+      url = "projects/"

@@ -4,5 +4,5 @@ draft = true
 title = 'About'
 +++
 
-Short introduction about you.
+Giới thiệu ngắn về bạn ở đây.
 

@@ -1,7 +1,7 @@
 +++
 draft = true
 date = 2026-09-23T15:09:03+07:00
-title = "Blog"
+title = "Content"
 description = ""
 slug = ""
 authors = []
@@ -11,5 +11,5 @@ externalLink = ""
 series = []
 +++
 
-List of your posts here.
+Danh sách nội dung của bạn ở đây.
 

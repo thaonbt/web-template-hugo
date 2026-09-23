@@ -11,5 +11,5 @@ externalLink = ""
 series = []
 +++
 
-List of your posts here.
+Danh sách posts của bạn ở đây.
 

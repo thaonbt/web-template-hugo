@@ -4,5 +4,5 @@ draft = true
 title = 'Projects'
 +++
 
-List of your projects here.
+Danh sách project của bạn.
 
