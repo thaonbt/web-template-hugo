@@ -1,0 +1,17 @@
+# Hugo build output
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Hugo Modules cache (nếu vô tình bị tạo trong repo)
+/_vendor/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Log
+*.log
