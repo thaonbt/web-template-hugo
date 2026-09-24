@@ -1,15 +1,8 @@
-+++
-draft = false
-date = 2026-09-23T15:09:03+07:00
-title = "Content"
-description = ""
-slug = ""
-authors = []
-tags = []
-categories = []
-externalLink = ""
-series = []
-+++
+---
+draft: false
+title: "Chào mừng"
+description: "Nội dung trang"
+---
 
-Danh sách nội dung của bạn ở đây.
+Chào mừng bạn đến trang của tôi
 

@@ -5,6 +5,8 @@ title = "Thao Nguyen"
   [[module.imports]]
     path = "github.com/luizdepra/hugo-coder"
 
+metaDataFormat = "yaml"
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false   # false: URL en không có prefix (/about/), true: có (/en/about/)
 enableEmoji = true
