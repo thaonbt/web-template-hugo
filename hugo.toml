@@ -1,5 +1,5 @@
-baseURL = "https://thaonbt.github.io/web-template-hugo"
-title = "ThaoNguyen"
+baseURL = "https://thaonbt.github.io/web-template-hugo/"
+title = "Thao Nguyen"
 
 [module]
   [[module.imports]]
@@ -96,17 +96,17 @@ customRemoteJS = []
     [[languages.en.menu.main]]
       name = "About"
       weight = 1
-      pageRef = "about/"  # pageRef khiến Hugo tự tính URL thật của trang (đã bao gồm đúng baseURL + subpath), thay vì bạn tự gõ tay chuỗi URL
+      url = "about/"  # pageRef khiến Hugo tự tính URL thật của trang (đã bao gồm đúng baseURL + subpath), thay vì bạn tự gõ tay chuỗi URL
 
     [[languages.en.menu.main]]
       name = "Blog"
       weight = 2
-      pageRef = "posts/"
+      url = "posts/"
 
     [[languages.en.menu.main]]
       name = "Projects"
       weight = 3
-      pageRef = "projects/"
+      url = "projects/"
 
   [languages.vi]
     label = "Tiếng Việt"
@@ -120,14 +120,14 @@ customRemoteJS = []
     [[languages.vi.menu.main]]
       name = "Giới thiệu"
       weight = 1
-      pageRef = "about/"
+      url = "about/"
 
     [[languages.vi.menu.main]]
       name = "Blog"
       weight = 2
-      pageRef = "posts/"
+      url = "posts/"
 
     [[languages.vi.menu.main]]
       name = "Dự án"
       weight = 3
-      pageRef = "projects/"
+      url = "projects/"
