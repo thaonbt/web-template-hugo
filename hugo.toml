@@ -1,10 +1,12 @@
-baseURL = "https://thaonbt.github.io/web-template-hugo/"
+baseURL = "https://thaonbt.github.io/web-template-hugo"
 title = "ThaoNguyen"
 
 [module]
   [[module.imports]]
     path = "github.com/luizdepra/hugo-coder"
 
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false   # false: URL en không có prefix (/about/), true: có (/en/about/)
 enableEmoji = true
 
 [pagination]
@@ -81,11 +83,6 @@ customRemoteJS = []
   tag = "tags"
   author = "authors"
 
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false   # false: URL en không có prefix (/about/), true: có (/en/about/)
-disableDefaultLanguageRedirect = false   # New in Hugo v0.140+: Cho phép tạo alias trang chủ chính xác
-disableLanguages = []
-
 [languages]
   [languages.en]
     label = "English"
@@ -99,17 +96,17 @@ disableLanguages = []
     [[languages.en.menu.main]]
       name = "About"
       weight = 1
-      pageRef = "/about/"  # pageRef khiến Hugo tự tính URL thật của trang (đã bao gồm đúng baseURL + subpath), thay vì bạn tự gõ tay chuỗi URL
+      pageRef = "about/"  # pageRef khiến Hugo tự tính URL thật của trang (đã bao gồm đúng baseURL + subpath), thay vì bạn tự gõ tay chuỗi URL
 
     [[languages.en.menu.main]]
       name = "Blog"
       weight = 2
-      pageRef = "/posts/"
+      pageRef = "posts/"
 
     [[languages.en.menu.main]]
       name = "Projects"
       weight = 3
-      pageRef = "/projects/"
+      pageRef = "projects/"
 
   [languages.vi]
     label = "Tiếng Việt"
@@ -123,14 +120,14 @@ disableLanguages = []
     [[languages.vi.menu.main]]
       name = "Giới thiệu"
       weight = 1
-      pageRef = "/about/"
+      pageRef = "about/"
 
     [[languages.vi.menu.main]]
       name = "Blog"
       weight = 2
-      pageRef = "/posts/"
+      pageRef = "posts/"
 
     [[languages.vi.menu.main]]
       name = "Dự án"
       weight = 3
-      pageRef = "/projects/"
+      pageRef = "projects/"
