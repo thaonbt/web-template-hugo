@@ -89,7 +89,10 @@ disableLanguages = ["vi"]
 
 [languages]
   [languages.en]
-    languageName = "English"
+    label = "English"
+    locale = "en-US"
+    timeZone = "America/New_York"
+    title = "English"
     weight = 1
     [languages.en.params]
       info = ["AI-Augmented Engineer", "QA Automation Engineer"]
@@ -111,8 +114,10 @@ disableLanguages = ["vi"]
       pageRef = "/projects/"
 
   [languages.vi]
-    languageName = "Tiếng Việt"
-    title = "ThaoNguyen"
+    label = "Tiếng Việt"
+    locale = "vi-VN"
+    timeZone = "Asia/Ho_Chi_Minh"
+    title = "Tiếng Việt"
     weight = 2
     [languages.vi.params]
       info = ["Kỹ sư phần mềm úng dụng AI", "Kỹ sư tự động hoá"]
