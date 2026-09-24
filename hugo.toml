@@ -94,17 +94,17 @@ customRemoteJS = []
     [[languages.en.menu.main]]
       name = "About"
       weight = 1
-      pageRef = "/about"  # pageRef khiến Hugo tự tính URL thật của trang (đã bao gồm đúng baseURL + subpath), thay vì bạn tự gõ tay chuỗi URL
+      pageRef = "/about/"  # pageRef khiến Hugo tự tính URL thật của trang (đã bao gồm đúng baseURL + subpath), thay vì bạn tự gõ tay chuỗi URL
 
     [[languages.en.menu.main]]
       name = "Blog"
       weight = 2
-      pageRef = "/posts"
+      pageRef = "/posts/"
 
     [[languages.en.menu.main]]
       name = "Projects"
       weight = 3
-      pageRef = "/projects"
+      pageRef = "/projects/"
 
   [languages.vi]
     languageName = "Tiếng Việt"
@@ -117,14 +117,14 @@ customRemoteJS = []
     [[languages.vi.menu.main]]
       name = "Giới thiệu"
       weight = 1
-      pageRef = "/about"
+      pageRef = "/about/"
 
     [[languages.vi.menu.main]]
       name = "Blog"
       weight = 2
-      pageRef = "/posts"
+      pageRef = "/posts/"
 
     [[languages.vi.menu.main]]
       name = "Dự án"
       weight = 3
-      pageRef = "/projects"
+      pageRef = "/projects/"
