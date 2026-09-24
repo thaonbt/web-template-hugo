@@ -83,16 +83,14 @@ customRemoteJS = []
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false   # false: URL en không có prefix (/about/), true: có (/en/about/)
-disableAliases = false    # false: Bật tính năng chuyển hướng tự động ở trang gốc
 disableDefaultLanguageRedirect = false   # New in Hugo v0.140+: Cho phép tạo alias trang chủ chính xác
-disableLanguages = ["vi"]
+disableLanguages = []
 
 [languages]
   [languages.en]
     label = "English"
     locale = "en-US"
     timeZone = "America/New_York"
-    title = "English"
     weight = 1
     [languages.en.params]
       info = ["AI-Augmented Engineer", "QA Automation Engineer"]
@@ -117,7 +115,6 @@ disableLanguages = ["vi"]
     label = "Tiếng Việt"
     locale = "vi-VN"
     timeZone = "Asia/Ho_Chi_Minh"
-    title = "Tiếng Việt"
     weight = 2
     [languages.vi.params]
       info = ["Kỹ sư phần mềm úng dụng AI", "Kỹ sư tự động hoá"]
