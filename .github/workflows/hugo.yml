@@ -52,7 +52,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://github.com/thaonbt/web-template-hugo/"
+            --baseURL "https://thaonbt.github.io/web-template-hugo/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
