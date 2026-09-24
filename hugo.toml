@@ -6,7 +6,9 @@ title = "ThaoNguyen"
     path = "github.com/luizdepra/hugo-coder"
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false   # false: URL en không có prefix (/about/), true: có (/en/about/)
+defaultContentLanguageInSubdir = true   # false: URL en không có prefix (/about/), true: có (/en/about/)
+disableAliases = false    # false: Bật tính năng chuyển hướng tự động ở trang gốc
+
 enableEmoji = true
 
 [pagination]
