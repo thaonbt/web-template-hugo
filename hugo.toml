@@ -25,7 +25,7 @@ enableEmoji = true
 
 # Giá trị mặc định — dùng chung cho mọi ngôn ngữ trừ khi override trong [languages.xx.params]
 [params]
-  author = "ThaoNguyen"
+  author = "Thao Nguyen"
   avatarURL = "images/avatar.png"       # thay bằng ảnh thật trong static/images/
   #gravatar = "john.doe@example.com"
   keywords = "blog,developer,tech"
