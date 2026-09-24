@@ -21,11 +21,30 @@ Không cần thêm bước nào khác để lấy theme — Hugo Modules tự re
 
 ## Chạy local
 
+### Codespaces hoặc local container
+
 ```bash
-hugo server -D
+make dev
 ```
 
-Mở `http://localhost:1313`. Flag `-D` để hiển thị cả draft content khi đang phát triển.
+Lệnh này chạy `hugo server -D --bind 0.0.0.0 --port 1313`. URL tương ứng là:
+
+- Trong môi trường chạy Hugo: `http://localhost:1313/web-template-hugo/`
+- Trong Codespaces: `https://[codebase-id].app.github.dev/web-template-hugo/`
+
+### Local machine tại root `/`
+
+Nếu muốn chạy local tại `http://localhost:1313/` thay vì có prefix, dùng:
+
+```bash
+hugo server -D --baseURL http://localhost:1313/
+```
+
+### GitHub Pages
+
+Sau khi deploy, site chạy tại `https://thaonbt.github.io/web-template-hugo/`.
+
+Site dùng prefix `/web-template-hugo/` trên Codespaces và GitHub Pages. Truy cập `/` trong các môi trường này sẽ trả về 404. Flag `-D` dùng để hiển thị cả draft content khi phát triển.
 
 ## Cấu trúc thư mục
 
