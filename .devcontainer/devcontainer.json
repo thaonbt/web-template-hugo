@@ -1,0 +1,13 @@
+{
+  "name": "Hugo Extended",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "latest",
+      "extended": true
+    }
+  },
+  "remoteEnv": {
+    "PATH": "/usr/local/bin:${containerEnv:PATH}"
+  }
+}
